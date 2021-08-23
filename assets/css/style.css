@@ -201,6 +201,7 @@ a:hover {
   margin-bottom: 3rem;
   z-index: 2;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  /*width: 70%;*/
 }
 
 @media (min-width: 768px) {
@@ -1457,3 +1458,45 @@ footer .credits a {
     justify-content: center;
   }
 }
+.cv-img{
+  width: 500px;
+  height: 500px;
+  border-radius: 15px;
+}
+
+
+@media screen and (min-width: 992px){
+  .margin-right{
+    margin-right: 250px;
+  }
+  .margin-left{
+    margin-left: 250px;
+  }
+}
+
+@media screen and (max-width: 991px){
+  .cv-img{
+    width: 80%;
+  }
+  .cv-img-2{
+    margin-top: 30px;
+  }
+  .padding{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+.cv-center-hrz{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cv-hover{
+  transition: all .5s;
+}
+
+.cv-hover:hover{
+  transform: scale(1.3);
+}
+
