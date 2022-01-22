@@ -1500,3 +1500,12 @@ footer .credits a {
   transform: scale(1.3);
 }
 
+.award {
+  width: 30%;
+}
+
+@media screen and (max-width: 768px){
+  .award{
+    width: 100%;
+  }
+}
