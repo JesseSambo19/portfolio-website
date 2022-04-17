@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="207" height="256" viewBox="0 0 207 256">
+  <defs>
+    <linearGradient id="flutter-a" x1="3.952%" x2="75.897%" y1="26.993%" y2="52.919%">
+      <stop offset="0%"/>
+      <stop offset="100%" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g fill="none">
+    <polygon fill="#47C5FB" points="127.326 0 0 127.326 39.41 166.736 206.147 0"/>
+    <polygon fill="#47C5FB" points="126.439 117.418 58.265 185.592 97.823 225.741 137.16 186.404 206.147 117.418"/>
+    <polygon fill="#00569E" points="97.824 225.741 127.77 255.687 206.146 255.687 137.16 186.404"/>
+    <polygon fill="#00B5F8" points="57.822 186.035 97.232 146.625 137.16 186.404 97.823 225.741"/>
+    <polygon fill="url(#flutter-a)" fill-opacity=".8" points="97.823 225.741 130.578 214.872 133.832 189.732"/>
+  </g>
+</svg>
