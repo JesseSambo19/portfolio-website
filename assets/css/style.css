@@ -52,7 +52,7 @@ a:hover {
   color: #4e4e4e;
 }
 
-.box-shadow, .paralax-mf, .service-box, .work-box, .card-blog {
+.box-shadow, .paralax-mf, .service-box, .work-box, .work-box2, .work-box3, .card-blog {
   box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
 }
 
@@ -851,6 +851,25 @@ a:hover {
   border-radius: 1rem;
   margin-bottom: 3rem;
   text-align: center;
+  min-height: 350px;
+}
+
+@media screen and (max-width:1400px){
+  .service-box {
+    min-height: 380px;
+  }
+}
+
+@media screen and (max-width:990px){
+  .service-box {
+    min-height: 450px;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .service-box {
+    min-height: 300px;
+  }
 }
 
 .service-box:hover .ico-circle {
@@ -925,11 +944,78 @@ a:hover {
   margin-bottom: 3rem;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  background-color: #fff;
+  background-color: #fff;  
+  min-height: 380px;
 }
 
 .work-box:hover img {
   transform: scale(1.3);
+}
+
+/* @media screen and (max-width:1400px){
+  .service-box {
+    min-height: 380px;
+  }
+} */
+
+/* @media screen and (max-width:990px){
+  .work-box {
+    min-height: 400px;
+  }
+} */
+
+@media screen and (max-width: 767px){
+  .work-box {
+    min-height: 300px;
+  }
+}
+
+.work-box2 {
+  margin-bottom: 3rem;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color: #fff;  
+  min-height: 430px;
+}
+
+.work-box2:hover img {
+  transform: scale(1.3);
+}
+
+@media screen and (max-width:990px){
+  .work-box2 {
+    min-height: 400px;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .work-box2 {
+    min-height: 300px;
+  }
+}
+
+.work-box3 {
+  margin-bottom: 3rem;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color: #fff;  
+  min-height: 470px;
+}
+
+.work-box3:hover img {
+  transform: scale(1.3);
+}
+
+@media screen and (max-width:991px){
+  .work-box3 {
+    min-height: 380px;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .work-box3 {
+    min-height: 300px;
+  }
 }
 
 .work-img {
@@ -1511,5 +1597,7 @@ footer .credits a {
 }
 
 .skill-icon {
-  width: 5.5%;
+  width: 25px;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
