@@ -975,7 +975,7 @@ a:hover {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   background-color: #fff;  
-  min-height: 430px;
+  min-height: 440px;
 }
 
 .work-box2:hover img {
