@@ -48,7 +48,7 @@
         </ul>
         <div class="language-toggle">
           <a href="index.html" onclick="localStorage.setItem('preferredLang','en')" class="text-decoration-underline">EN</a>
-          <a href="index-pt.html" onclick="localStorage.setItem('preferredLang','pt')">PT</a>
+          <a href="pt.html" onclick="localStorage.setItem('preferredLang','pt')">PT</a>
         </div>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -1863,9 +1863,9 @@
       var goEn = browserLang.startsWith('en');
 
       if (!preferredLang) {
-        if (goPt && currentPage !== 'index-pt.html') {
+        if (goPt && currentPage !== 'pt.html') {
           localStorage.setItem('preferredLang', 'pt');
-          window.location.href = 'index-pt.html';
+          window.location.href = 'pt.html';
           return;
         }
         if (goEn && currentPage !== 'index.html') {
@@ -1874,8 +1874,8 @@
           return;
         }
       } else {
-        if (preferredLang === 'pt' && currentPage !== 'index-pt.html') {
-          window.location.href = 'index-pt.html';
+        if (preferredLang === 'pt' && currentPage !== 'pt.html') {
+          window.location.href = 'pt.html';
           return;
         }
         if (preferredLang === 'en' && currentPage !== 'index.html') {

@@ -48,7 +48,7 @@
         </ul>
          <div class="language-toggle">
           <a href="index.html" onclick="localStorage.setItem('preferredLang','en')">EN</a>
-          <a href="index-pt.html" onclick="localStorage.setItem('preferredLang','pt')" class="text-decoration-underline">PT</a>
+          <a href="pt.html" onclick="localStorage.setItem('preferredLang','pt')" class="text-decoration-underline">PT</a>
         </div>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -1855,14 +1855,14 @@ onde aprimorei minhas habilidades e minha paixão por criar soluções inovadora
     (function() {
       var preferredLang = localStorage.getItem('preferredLang');
       var browserLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
-      var currentPage = window.location.pathname.split('/').pop().toLowerCase() || 'index-pt.html';
+      var currentPage = window.location.pathname.split('/').pop().toLowerCase() || 'pt.html';
       var goPt = browserLang.startsWith('pt');
       var goEn = browserLang.startsWith('en');
 
       if (!preferredLang) {
-        if (goPt && currentPage !== 'index-pt.html') {
+        if (goPt && currentPage !== 'pt.html') {
           localStorage.setItem('preferredLang', 'pt');
-          window.location.href = 'index-pt.html';
+          window.location.href = 'pt.html';
           return;
         }
         if (goEn && currentPage !== 'index.html') {
@@ -1871,8 +1871,8 @@ onde aprimorei minhas habilidades e minha paixão por criar soluções inovadora
           return;
         }
       } else {
-        if (preferredLang === 'pt' && currentPage !== 'index-pt.html') {
-          window.location.href = 'index-pt.html';
+        if (preferredLang === 'pt' && currentPage !== 'pt.html') {
+          window.location.href = 'pt.html';
           return;
         }
         if (preferredLang === 'en' && currentPage !== 'index.html') {
