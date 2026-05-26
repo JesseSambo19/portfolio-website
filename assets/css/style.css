@@ -1601,3 +1601,14 @@ footer .credits a {
   margin-right: 10px;
   margin-bottom: 10px;
 }
+
+.language-toggle {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 0px 50px;
+}
+
+.language-toggle a {
+  margin: 0 10px;
+}
