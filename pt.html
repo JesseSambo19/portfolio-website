@@ -47,8 +47,8 @@
           <li><a class="nav-link scrollto" href="#contact">Contato</a></li>
         </ul>
          <div class="language-toggle">
-          <a href="index.html" onclick="localStorage.setItem('preferredLang','en')">EN</a>
-          <a href="pt.html" onclick="localStorage.setItem('preferredLang','pt')" class="text-decoration-underline">PT</a>
+          <a href="index.html" onclick="localStorage.setItem('preferredLang','en'); window.location.href='index.html'; return false;">EN</a>
+          <a href="pt.html" onclick="localStorage.setItem('preferredLang','pt'); window.location.href='pt.html'; return false;" class="text-decoration-underline">PT</a>
         </div>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -1855,7 +1855,8 @@ onde aprimorei minhas habilidades e minha paixão por criar soluções inovadora
     (function() {
       var preferredLang = localStorage.getItem('preferredLang');
       var browserLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
-      var currentPage = window.location.pathname.split('/').pop().toLowerCase() || 'pt.html';
+      var currentPage = window.location.pathname.split('/').pop().toLowerCase();
+      if (!currentPage) { currentPage = 'pt.html'; }
       var goPt = browserLang.startsWith('pt');
       var goEn = browserLang.startsWith('en');
 

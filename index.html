@@ -47,8 +47,8 @@
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <div class="language-toggle">
-          <a href="index.html" onclick="localStorage.setItem('preferredLang','en')" class="text-decoration-underline">EN</a>
-          <a href="pt.html" onclick="localStorage.setItem('preferredLang','pt')">PT</a>
+          <a href="index.html" onclick="localStorage.setItem('preferredLang','en'); window.location.href='index.html'; return false;" class="text-decoration-underline">EN</a>
+          <a href="pt.html" onclick="localStorage.setItem('preferredLang','pt'); window.location.href='pt.html'; return false;">PT</a>
         </div>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -1858,7 +1858,8 @@
     (function() {
       var preferredLang = localStorage.getItem('preferredLang');
       var browserLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
-      var currentPage = window.location.pathname.split('/').pop().toLowerCase() || 'index.html';
+      var currentPage = window.location.pathname.split('/').pop().toLowerCase();
+      if (!currentPage) { currentPage = 'index.html'; }
       var goPt = browserLang.startsWith('pt');
       var goEn = browserLang.startsWith('en');
 
