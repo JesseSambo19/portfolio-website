@@ -47,8 +47,8 @@
           <li><a class="nav-link scrollto" href="#contact">Contato</a></li>
         </ul>
          <div class="language-toggle">
-          <a href="index.html" onclick="localStorage.setItem('preferredLang','en'); window.location.href='index.html'; return false;">EN</a>
-          <a href="pt.html" onclick="localStorage.setItem('preferredLang','pt'); window.location.href='pt.html'; return false;" class="text-decoration-underline">PT</a>
+          <a href="index.html">EN</a>
+          <a href="pt.html" class="text-decoration-underline">PT</a>
         </div>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -1851,38 +1851,6 @@ onde aprimorei minhas habilidades e minha paixão por criar soluções inovadora
   <script src="assets/vendor/typed.js/typed.min.js"></script>
 
   <!-- Template Main JS File -->
-  <script>
-    (function() {
-      var preferredLang = localStorage.getItem('preferredLang');
-      var browserLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
-      var currentPage = window.location.pathname.split('/').pop().toLowerCase();
-      if (!currentPage) { currentPage = 'pt.html'; }
-      var goPt = browserLang.startsWith('pt');
-      var goEn = browserLang.startsWith('en');
-
-      if (!preferredLang) {
-        if (goPt && currentPage !== 'pt.html') {
-          localStorage.setItem('preferredLang', 'pt');
-          window.location.href = 'pt.html';
-          return;
-        }
-        if (goEn && currentPage !== 'index.html') {
-          localStorage.setItem('preferredLang', 'en');
-          window.location.href = 'index.html';
-          return;
-        }
-      } else {
-        if (preferredLang === 'pt' && currentPage !== 'pt.html') {
-          window.location.href = 'pt.html';
-          return;
-        }
-        if (preferredLang === 'en' && currentPage !== 'index.html') {
-          window.location.href = 'index.html';
-          return;
-        }
-      }
-    })();
-  </script>
   <script src="assets/js/main.js"></script>
 
 </body>

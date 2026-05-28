@@ -47,8 +47,8 @@
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <div class="language-toggle">
-          <a href="index.html" onclick="localStorage.setItem('preferredLang','en'); window.location.href='index.html'; return false;" class="text-decoration-underline">EN</a>
-          <a href="pt.html" onclick="localStorage.setItem('preferredLang','pt'); window.location.href='pt.html'; return false;">PT</a>
+          <a href="index.html" class="text-decoration-underline">EN</a>
+          <a href="pt.html">PT</a>
         </div>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -1854,38 +1854,6 @@
   <script src="assets/vendor/typed.js/typed.min.js"></script>
 
   <!-- Template Main JS File -->
-  <script>
-    (function() {
-      var preferredLang = localStorage.getItem('preferredLang');
-      var browserLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
-      var currentPage = window.location.pathname.split('/').pop().toLowerCase();
-      if (!currentPage) { currentPage = 'index.html'; }
-      var goPt = browserLang.startsWith('pt');
-      var goEn = browserLang.startsWith('en');
-
-      if (!preferredLang) {
-        if (goPt && currentPage !== 'pt.html') {
-          localStorage.setItem('preferredLang', 'pt');
-          window.location.href = 'pt.html';
-          return;
-        }
-        if (goEn && currentPage !== 'index.html') {
-          localStorage.setItem('preferredLang', 'en');
-          window.location.href = 'index.html';
-          return;
-        }
-      } else {
-        if (preferredLang === 'pt' && currentPage !== 'pt.html') {
-          window.location.href = 'pt.html';
-          return;
-        }
-        if (preferredLang === 'en' && currentPage !== 'index.html') {
-          window.location.href = 'index.html';
-          return;
-        }
-      }
-    })();
-  </script>
   <script src="assets/js/main.js"></script>
 
 </body>
